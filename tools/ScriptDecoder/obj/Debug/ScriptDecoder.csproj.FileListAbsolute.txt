@@ -1,9 +1,0 @@
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Debug\ScriptDecoder.csprojResolveAssemblyReference.cache
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Debug\ScriptDecoder.exe
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Debug\ScriptDecoder.pdb
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Debug\ScriptDecoder.exe.manifest
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Debug\ScriptDecoder.application
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Debug\ScriptDecoder.exe
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Debug\ScriptDecoder.pdb
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Debug\ScriptDecoder.exe.manifest
-C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Debug\ScriptDecoder.application
