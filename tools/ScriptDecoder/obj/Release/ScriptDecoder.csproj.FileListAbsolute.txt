@@ -1,0 +1,9 @@
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Release\ScriptDecoder.exe.manifest
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Release\ScriptDecoder.application
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Release\ScriptDecoder.exe
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\bin\Release\ScriptDecoder.pdb
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Release\ScriptDecoder.exe.manifest
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Release\ScriptDecoder.application
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Release\ScriptDecoder.exe
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Release\ScriptDecoder.pdb
+C:\Users\bbs3223474\Desktop\BGIKit-master\ScriptDecoder\obj\Release\ScriptDecoder.csprojResolveAssemblyReference.cache
