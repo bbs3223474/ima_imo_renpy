@@ -223,7 +223,7 @@ init -1 python hide:
     config.intra_transition = None
 
     ## 从主菜单进入游戏内菜单时的转场特效。
-    config.main_game_transition = None
+    config.main_game_transition = Fade(0.5, 1.0, 0.5)
 
     ## 退出菜单回到主菜单时的转场特效。
     config.game_main_transition = None
@@ -232,7 +232,7 @@ init -1 python hide:
     ## 译注：封面(splashscreen)指的是打开游戏时
     ## 先看到的一些发行商图片或游戏宣传视频等。
     ## 封面需要另外添加代码实现，请参见官方文档。
-    config.end_splash_transition = None
+    config.end_splash_transition = Fade(0.5, 0.5, 0.5)
 
     ## 当游戏结束时返回主菜单的转场特效。
     config.end_game_transition = None
@@ -347,20 +347,20 @@ init -1 python hide:
     ## 定义一个角色语音存放的文件夹，在脚本中可以直接进行调用。
     ## 定义以后，您只需输入音频的文件名即可播放音频。
     # config.auto_voice = "vo1/{filename}.ogg", "vo2/{filename}.ogg", "vo3/{filename}.ogg", "vo4/{filename}.ogg", "vo5/{filename}.ogg", "vo6/{filename}.ogg", "moba/{filename}.ogg"
-    # config.voice_filename_format = "{filename}.ogg"
+    config.voice_filename_format = "vo1/{filename}.ogg"
 
     ## 默认声音通道。
     ## file_prefix中填入路径，file_suffix中填入后缀名，
     ## 即可实现仅需输入文件名就能回放声音。
-    renpy.music.register_channel("bgm", mixer="music", loop=True, file_prefix="bgm", file_suffix=".ogg")
-    renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se1", file_suffix=".ogg")
-    renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se2", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo1", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo2", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo3", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo4", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo5", file_suffix=".ogg")
-    renpy.music.register_channel("voice", mixer="voice", loop=False, file_prefix="vo6", file_suffix=".ogg")
+    # renpy.music.register_channel("bgm", mixer="music", loop=True, file_prefix="bgm", file_suffix=".ogg")
+    # renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se1", file_suffix=".ogg")
+    # renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se2", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo1/*", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo2/*", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo3/*", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo4/*", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo5/*", file_suffix=".ogg")
+    # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo6/*", file_suffix=".ogg")
 
 ## 此区域控制您将如何生成一个发行版程序。
 
@@ -451,8 +451,8 @@ init python:
     ## 定义一整个文件夹的图像，在脚本中可直接使用文件名进行调用，
     ## 避免单个文件定义的繁琐步骤。
     ## 译注：详细使用方法请参阅官方文档。
-    # config.automatic_images = [ '/' ]
-    # config.automatic_images_strip = [ '/' ]
+    config.automatic_images = [ '/' ]
+    config.automatic_images_strip = [ '/' ]
 
     ## 打开移动平台上的视频硬件加速，提升视频播放性能。
     ## 理论上绝大多数平台支持硬件加速功能。

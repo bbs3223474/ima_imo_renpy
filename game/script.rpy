@@ -9,6 +9,9 @@ define dis5 = Dissolve(5.0)
 define dis7 = Dissolve(7.0)
 image black = "#000"
 image white = "#fff"
+
+## Add a defined character for test use.
+## 添加一个定义好的角色用于测试。
 define r = Character('璃　紗', color="#ffffff")
 
 ###############################################################
@@ -51,4 +54,4 @@ label splashscreen:
 ###############################################################
 
 label start:
-r "abc"
+jump ev0000
