@@ -226,4 +226,4 @@ pause 0.5
 hide bg2 is_ecg01a_s26 as top
 with Dis
 
-jump ev0001
+jump ev0010
