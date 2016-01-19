@@ -11,7 +11,7 @@ init python:
         ui.soundstopbehavior("sound")
         renpy.pause()
 
-stop music fadeout 1.0
+# stop music fadeout 1.0
 pause 0.5
 $ _skipping = True
 $ _dismiss_pause = False
@@ -223,7 +223,10 @@ show bg2 is_ecg01a_s26 as top
 with Dis
 $ waitsound("vo1/ayumu_10017.ogg")
 pause 0.5
-hide bg2 is_ecg01a_s26 as top
+scene white
 with Dis
+stop music fadeout 1
+scene black
+with dis2
 
 jump ev0010
