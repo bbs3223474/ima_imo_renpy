@@ -34,9 +34,9 @@ label splashscreen:
  ## but I want it to play when "f_logo01_s01" appears. Finally I found "play" argument can solve this problem.
  ## 当使用“voice”命令时，发生了很有趣的事情。系统语音只会在视频播放时出现，而我希望它在“f_logo01_s01”时就播放，
  ## 最终我发现“play”命令解决了这个问题。
+ play sound "vo1/sys_00001.ogg"
  scene bg1 f_logo01_s01
  with Dis
- play sound "vo1/sys_00001.ogg"
  pause 2
 
  $ _skipping = True
@@ -54,7 +54,4 @@ label splashscreen:
 ###############################################################
 
 label start:
-scene black
-stop music fadeout 1
-with Fade(0.5, 1.0, 0.5)
 jump ev0000
