@@ -9,12 +9,14 @@ define dis3 = Dissolve(3.0)
 define dis5 = Dissolve(5.0)
 define dis7 = Dissolve(7.0)
 define su = CropMove(1.0, mode="slidedown", startpos=(1280, 720), endpos=(1280, 1440))
-define mu = MoveTransition(1.0, enter=None, leave=None, old=False, layers=['master'], time_warp=None, enter_time_warp=None, leave_time_warp=None)
+define mu = MoveTransition(0.2)
 
 image black = "#000"
 image white = "#fff"
 define r = Character ('陸斗')
 define on = Character ('女の子')
+define x = Character ('？？')
+define m = Character ('奉莉')
 
 ## Add a defined character for test use.
 ## 添加一个定义好的角色用于测试。
