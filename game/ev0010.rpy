@@ -2,7 +2,7 @@ label ev0010:
 
 scene bg2 is_ecg102_s01
 with dis2
-play music "bgm/bgm_m07.ogg"
+play music "bgm_m07"
 pause 0.5
 
 "上着が必要ないくらい、季節はずれの陽気に恵まれた今日。"
@@ -18,11 +18,11 @@ r "「…………」"
 "一足先に結果を知った人たちの反応。"
 "笑顔……そして、涙……"
 "果たして俺に訪れる結末は……"
-play sound "se1/se009_001.ogg"
+play se "se009_001"
 hide bg2 is_ecg02_s01
 scene bg1 bg00b_s01
-# with mu
-# with ComposeTransition(Dis, before=None, after=moveintop)
+with dis
+scene bg1 bg00b_s01 at top with move
 "ビュウウウウウウっ！！"
 
 voice "rikuto_10001"
@@ -51,9 +51,10 @@ r "「……ん？」"
 "数メートル先にいる女の子。"
 "その娘は、俺を見つめていた。"
 stop music fadeout 0.5
+
 scene cg1 is_cg01_s03
 with dis2
-play music "bgm/bgm_m36.ogg"
+play music "bgm_m36"
 on "「…………」"
 "……かわいい。"
 "素直に、そう思った。"
@@ -100,5 +101,6 @@ on "「合格、おめでとうございます！」"
 "とびきりの笑顔で――"
 scene black
 with dis2
+stop music fadeout 1
 
 jump ev0020
