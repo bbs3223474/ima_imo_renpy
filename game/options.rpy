@@ -192,7 +192,7 @@ init -1 python hide:
 
     ## 设置用户位于主菜单时的音乐。
 
-    config.main_menu_music = "bgm/ima_inst.ogg"
+    config.main_menu_music = "ima_inst"
 
 
     #########################################
@@ -352,9 +352,9 @@ init -1 python hide:
     ## 默认声音通道。
     ## file_prefix中填入路径，file_suffix中填入后缀名，
     ## 即可实现仅需输入文件名就能回放声音。
-    # renpy.music.register_channel("bgm", mixer="music", loop=True, file_prefix="bgm", file_suffix=".ogg")
-    # renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se1", file_suffix=".ogg")
-    # renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se2", file_suffix=".ogg")
+    renpy.music.register_channel("music", mixer="music", loop=True, file_prefix="bgm/", file_suffix=".ogg")
+    renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se1/", file_suffix=".ogg")
+    renpy.music.register_channel("se2", mixer="sfx", loop=False, file_prefix="se2/", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo1/*", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo2/*", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo3/*", file_suffix=".ogg")
@@ -439,14 +439,12 @@ init python:
     build.classify('game/cg1s/*.png', 'cg')
     build.classify('game/ch*/*.png', 'char')
     build.classify('game/sysgrp/*.png', 'sysgrp')
-    build.classify('game/vo*/*.ogg', 'voice')
-    build.classify('game/moba/*.ogg', 'voice')
+    build.classify('game/vo1/*.ogg', 'voice')
     build.classify('game/se*/*.ogg', 'se')
     build.classify('game/system/**.*', 'data')
     build.classify('game/tr/**.*', 'data')
     build.classify('game/bgm/*.ogg', 'bgm')
     build.classify('game/movie/*.avi', 'movie')
-
 
     ## 定义一整个文件夹的图像，在脚本中可直接使用文件名进行调用，
     ## 避免单个文件定义的繁琐步骤。
@@ -460,3 +458,7 @@ init python:
 
     ## 打开选择肢自动存档功能，存档将会放到Q.Save位置。
     config.autosave_on_choice = True
+
+init:
+    $ c = Position(xpos=0.5, ypos=1.25)
+    $ ju = Position(xpos=0.5, ypos=1.15)
