@@ -462,3 +462,8 @@ init python:
 init:
     $ c = Position(xpos=0.5, ypos=1.25)
     $ ju = Position(xpos=0.5, ypos=1.15)
+    $ cu = Position(xpos=0.5, ypos=1.15)
+    $ sleft = Position(xpos=0.2, ypos=1.25)
+    $ sright = Position(xpos=0.8, ypos=1.25)
+    $ left = Position(xpos=0.3, ypos=1.25)
+    $ right = Position(xpos=0.7, ypos=1.25)
