@@ -103,6 +103,7 @@ m "「これはもう好きになっちゃったかな？　その娘のこと�
 voice "rikuto_10020"
 r "「そ、それはないと思うけど……」"
 show ch2f 02mata02s17 at c
+with dis
 voice "matsuri_10009"
 m "「どうして？」"
 voice "rikuto_10021"
