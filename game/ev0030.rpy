@@ -517,4 +517,4 @@ r "「一緒のクラスになれたらいいねっ！」"
 scene black
 with dis2
 stop music fadeout 1
-jump ev0040
+jump ev0035
