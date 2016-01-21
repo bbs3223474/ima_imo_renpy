@@ -2,6 +2,7 @@
 ## 定义区域。用于任何游戏中的体验效果。
 define dis = dissolve
 define Dis = Dissolve(1.0)
+define dis03 = Dissolve(0.3)
 define dis05 = Dissolve(0.5)
 define dis15 = Dissolve(1.5)
 define dis2 = Dissolve(2.0)
@@ -10,6 +11,7 @@ define dis5 = Dissolve(5.0)
 define dis7 = Dissolve(7.0)
 define su = CropMove(1.0, mode="slidedown", startpos=(1280, 720), endpos=(1280, 1440))
 define mu = MoveTransition(0.2)
+define move03 = MoveTransition(0.3)
 
 image black = "#000"
 image white = "#fff"
@@ -17,6 +19,7 @@ define r = Character ('陸斗')
 define on = Character ('女の子')
 define x = Character ('？？')
 define m = Character ('奉莉')
+define a = Character ('歩夢')
 
 ## Add a defined character for test use.
 ## 添加一个定义好的角色用于测试。
