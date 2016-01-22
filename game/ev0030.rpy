@@ -249,9 +249,13 @@ m "「陸斗待ってっ！」"
 "そして、奉莉が俺に追いついたところで――"
 scene cg1 is_cg03_s01
 with Dis
-voice "moba001_10007"
-voice "moba002_10006"
-voice "moba003_10005"
+## Since Ren'py cannot play multiple voices at the same time by voice statement but can define multiple sound channels,
+## multiple voices playing can be realized by this way and absolutely have to register the sound channels in options.rpy first.
+## 因为Ren'py不能通过voice语句同时播放多个语音，但是可以注册多个声音通道，
+## 因此多语音同时播放就可以通过以下方式实现，当然首先也要在options.rpy里注册好声音通道。
+$ renpy.music.play("moba001_10007", channel="vo2", synchro_start=True)
+$ renpy.music.play("moba002_10006", channel="vo3", synchro_start=True)
+$ renpy.music.play("moba003_10005", channel="vo4", synchro_start=True)
 "絡む男ABC" "「うおおおおぉっ！！」"
 play se "se002_010"
 "一斉に男達が女の子に殴りかかった。"
@@ -260,9 +264,9 @@ stop se
 voice "mao_10004"
 "女の子" "「ふっ……」"
 "男達の包囲網からするっと身をかわした。"
-voice "moba001_10008"
-voice "moba002_10007"
-voice "moba003_10006"
+$ renpy.music.play("moba001_10008", channel="vo2", synchro_start=True)
+$ renpy.music.play("moba002_10007", channel="vo3", synchro_start=True)
+$ renpy.music.play("moba003_10006", channel="vo4", synchro_start=True)
 "絡む男ABC" "「おおぉっ！？」"
 "あやうく同士討ちになりそうになった男達。"
 "あわてて女の子の方へ向き直り――"
