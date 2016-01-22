@@ -1,8 +1,4 @@
 label ev0030:
-init python:
-    def waitsound():
-        ui.soundstopbehavior("se")
-        renpy.pause()
 
 "………………"
 
@@ -90,7 +86,7 @@ show ch2f 02mata02s04 at c
 with dis
 voice "matsuri_10030"
 m "「そうね……シゴの世界まで」"
-play se "se005_003"
+play sound "se1/se005_003.ogg"
 $ waitsound()
 voice "rikuto_10043"
 r "「……おお！」"
