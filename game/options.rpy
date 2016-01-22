@@ -355,6 +355,9 @@ init -1 python hide:
     renpy.music.register_channel("music", mixer="music", loop=True, file_prefix="bgm/", file_suffix=".ogg")
     renpy.music.register_channel("se", mixer="sfx", loop=False, file_prefix="se1/", file_suffix=".ogg")
     renpy.music.register_channel("se2", mixer="sfx", loop=False, file_prefix="se2/", file_suffix=".ogg")
+    renpy.music.register_channel("vo2", mixer="sfx", loop=False, file_prefix="vo1/", file_suffix=".ogg")
+    renpy.music.register_channel("vo3", mixer="sfx", loop=False, file_prefix="vo1/", file_suffix=".ogg")
+    renpy.music.register_channel("vo4", mixer="sfx", loop=False, file_prefix="vo1/", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo1/*", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo2/*", file_suffix=".ogg")
     # renpy.music.register_channel("vo", mixer="voice", loop=False, file_prefix="vo3/*", file_suffix=".ogg")
@@ -458,6 +461,13 @@ init python:
 
     ## 打开选择肢自动存档功能，存档将会放到Q.Save位置。
     config.autosave_on_choice = True
+
+    ## 定义Ruby text的效果以在游戏中实现假名上标。
+    style.default.line_leading = 4
+    style.ruby_style = Style(style.default)
+    style.ruby_style.size = 12
+    style.ruby_style.yoffset = -20
+    style.default.ruby_style = style.ruby_style
 
 init:
     $ c = Position(xpos=0.5, ypos=1.25)
