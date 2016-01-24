@@ -12,6 +12,9 @@ define dis7 = Dissolve(7.0)
 define su = CropMove(1.0, mode="slidedown", startpos=(1280, 720), endpos=(1280, 1440))
 define mu = MoveTransition(0.2)
 define move03 = MoveTransition(0.3)
+define eyeclose = ImageDissolve("tr/eyeopen.png", 1.0)
+define eyeopen = ImageDissolve("tr/eyeclose.png", 1.0)
+define bomb1 = ImageDissolve("tr/bomb2.png", 0.5)
 
 image black = "#000"
 image white = "#fff"
@@ -24,6 +27,11 @@ define a = Character ('歩夢')
 ## Add a defined character for test use.
 ## 添加一个定义好的角色用于测试。
 # define r = Character('璃　紗', color="#ffffff")
+
+## Add transitions contain in original game.
+## 添加原游戏中的转场特效。
+# init:
+#  $ eyeclose = ImageDissolve("tr/eyeclose.png", 2.0)
 
 ###############################################################
 ## Scripts below are for splash screen.
