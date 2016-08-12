@@ -23,6 +23,11 @@ define on = Character ('女の子')
 define x = Character ('？？')
 define m = Character ('奉莉')
 define a = Character ('歩夢')
+# 尽管上面定义了一些常见角色的名称，但实际上在使用buriko2rpy工具转换脚本的时候，
+# 角色名称已经直接准备好，因此不如直接使用而非使用define去从头定义。
+# Though some define statements was presented above, but when we're using buriko2rpy tool
+# to convert scripts, the characters' name has already been prepared. So it will be easier
+# to use them directly rather than use define statement.
 
 ## Add a defined character for test use.
 ## 添加一个定义好的角色用于测试。
